@@ -1,6 +1,7 @@
 (1) 로그인 기능
 
-  ![그림입니다.  원본 그림의 이름: CLP00005bd00001.bmp  원본 그림의 크기: 가로 793pixel, 세로 528pixel](file:///C:\Users\lee\AppData\Local\Temp\Hnc\BinData\EMB000007d063eb.bmp)  
+![캡처](https://user-images.githubusercontent.com/46337218/60888467-ce808e80-a291-11e9-894c-179f1c489666.PNG)
+
 
  초기 페이지로써 아이디와 패스워드를 입력해야 메인 페이지로 이동하게 하였습니다.
 
