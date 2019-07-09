@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>KBO</title>
+    <link type="text/css" rel="stylesheet" href="../maincss.css" />
+    <link type="text/css" rel="stylesheet" href="../teamrecord/teamrank.css" />
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic:400,700,800&amp;subset=korean" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <a href="../mainpage/main.html"><img id="kbologo" src="../img/logo.JPG" class ="logo" alt="kbo로고"></a>
+        <div id="loginblock">
+            <a href="../login/login.html" class="logandreg">login</a>
+            <a href="../login/register.html" class="logandreg"> register</a>
+            <input id="youtube" type="text" placeholder="유튜브로 검색됩니다." onkeydown="Enter_Check()">
+        </div>
+        <ul id="menubar">
+
+            <li><a href="../teamrecord/rank.html">팀순위</a></li>
+            <li> 팀정보
+                <ul class="submenu">
+                    <li> <a href="../team/sk.html">SK</a> </li>
+                    <li> <a href="../team/nc.html">NC</a> </li>
+                    <li> <a href="../team/lg.html">LG</a> </li>
+                    <li> <a href="../team/kt.html">KT</a> </li>
+                    <li> <a href="../team/kia.html">기아</a> </li>
+                    <li> <a href="../team/doosan.html">두산</a> </li>
+                    <li> <a href="../team/kium.html">키움</a> </li>
+                    <li> <a href="../team/lotte.html">롯데</a> </li>
+                    <li> <a href="../team/hanwha.html">한화</a> </li>
+                    <li> <a href="../team/samsung.html">삼성</a> </li>
+                </ul>
+            </li>
+            <li>선수 정보
+                <ul class="submenu">
+                    <li><a href="../player/hitter.html">타자</a></li>
+                    <li><a href="../player/pitcher.html">투수</a></li>
+                </ul>
+            </li>
+            <li> 기타 정보
+                <ul class="submenu">
+                    <li><a href="../etc/app.html">관련어플</a></li>
+                    <li><a href="../etc/fun.html">재미요소</a></li>
+                </ul>
+            </li>
+            <li> <a href="../squad/squad.html">나의 스쿼드</a> </li>
+
+        </ul>
+        <div id="undernav"> </div>
+    </header>
+    <nav></nav>
+    <section>
+        <table id="record">
+            <caption>KBO 리그 팀순위</caption>
+            <thead>
+                <tr>
+                    <th>
+                        <div >
+                            <strong><span >순위</span></strong>
+                        </div>
+                    </th>
+                    <th>
+                        <div >
+                            <strong><span >팀</span></strong>
+                        </div>
+                    </th>
+                    <th>
+                        <div >
+
+                            <strong ><span >경기수</span></strong>
+
+                        </div>
+                    </th>
+                    <th>
+                        <div >
+                            <strong ><span >승</span></strong>
+                        </div>
+                    </th>
+                    <th>
+                        <div >
+                            <strong ><span >패</span></strong>
+                        </div>
+                    </th>
+                    <th>
+                        <div >
+                            <strong ><span >무</span></strong>
+                        </div>
+                    </th>
+                    <th>
+                        <div >
+                            <strong><span  >승률</span></strong>
+                        </div>
+                    </th>
+                    <th>
+                        <div >
+
+                            <strong ><span >게임차</span></strong>
+
+                        </div>
+                    </th>
+                    <th>
+                        <div >
+
+                            <strong ><span >연속</span></strong>
+
+                        </div>
+                    </th>
+                    <th>
+                        <div >
+
+                            <strong ><span  >출루율</span></strong>
+
+                        </div>
+                    </th>
+                    <th>
+                        <div >
+
+                            <strong ><span  >장타율</span></strong>
+
+                        </div>
+                    </th>
+                    <th>
+                        <div >
+
+                            <strong><span i >최근 10경기</span></strong>
+
+                        </div>
+                    </th>
+                </tr>
+            </thead>
+            <tbody id="Table">
+                <tr>
+                    <th>
+                        <strong>1</strong>
+                    </th>
+                    <td class="tm">
+                        <div><img class ="logo" src="../img/logo/sk.png" alt="로고">
+                            <span id="SK">SK</span>
+                        </div>
+                    </td>
+                    <td>65</td>
+                    <td>42</td>
+                    <td>22</td>
+                    <td>1</td>
+                    <td><strong>0.656</strong></td>
+                    <td>0.0</td>
+                    <td>1패</td>
+                    <td>0.329</td>
+                    <td>0.376</td>
+                    <td>7승-3패-0무</td>
+                </tr>
+                <tr>
+                    <th><strong>2</strong></th>
+                    <td class="tm">
+                        <div><img class ="logo" src="../img/logo/ds.png" alt="로고">
+                            <span id="DS">두산</span></div>
+                    </td>
+                    <td>66</td>
+                    <td>41</td>
+                    <td>25</td>
+                    <td>0</td>
+                    <td><strong>0.621</strong></td>
+                    <td>2.0</td>
+                    <td>2패</td>
+                    <td>0.359</td>
+                    <td>0.398</td>
+                    <td>4승-6패-0무</td>
+                </tr>
+                <tr>
+                    <th><strong>3</strong></th>
+                    <td class="tm">
+                        <div><img class ="logo"  src="../img/logo/lg.png" alt="로고">
+                            <span id="LG">LG</span></div>
+                    </td>
+                    <td>64</td>
+                    <td>37</td>
+                    <td>27</td>
+                    <td>0</td>
+                    <td><strong>0.578</strong></td>
+                    <td>5.0</td>
+                    <td>2승</td>
+                    <td>0.329</td>
+                    <td>0.362</td>
+                    <td>8승-2패-0무</td>
+                </tr>
+                <tr>
+                    <th><strong>4</strong></th>
+                    <td class="tm">
+                        <div><img class ="logo" src="../img/logo/nc.png" alt="로고">
+                            <span id="NC">NC</span></div>
+                    </td>
+                    <td>64</td>
+                    <td>35</td>
+                    <td>29</td>
+                    <td>0</td>
+                    <td><strong>0.547</strong></td>
+                    <td>7.0</td>
+                    <td>3승</td>
+                    <td>0.351</td>
+                    <td>0.436</td>
+                    <td>4승-6패-0무</td>
+                </tr>
+                <tr>
+                    <th><strong>5</strong></th>
+                    <td class="tm">
+                        <div><img class ="logo" src="../img/logo/ku.png" alt="로고">
+                            <span id="KU">키움</span></div>
+                    </td>
+                    <td>67</td>
+                    <td>36</td>
+                    <td>31</td>
+                    <td>0</td>
+                    <td><strong>0.537</strong></td>
+                    <td>7.5</td>
+                    <td>2승</td>
+                    <td>0.354</td>
+                    <td>0.406</td>
+                    <td>5승-5패-0무</td>
+                </tr>
+                <tr>
+                    <th><strong>6</strong></th>
+                    <td class="tm">
+                        <div><img class ="logo" src="../img/logo/ss.png" alt="로고">
+                            <span id="SS">삼성</span></div>
+                    </td>
+                    <td>64</td>
+                    <td>29</td>
+                    <td>35</td>
+                    <td>0</td>
+                    <td><strong>0.453</strong></td>
+                    <td>13.0</td>
+                    <td>1승</td>
+                    <td>0.338</td>
+                    <td>0.400</td>
+                    <td>6승-4패-0무</td>
+                </tr>
+                <tr>
+                    <th><strong>7</strong></th>
+                    <td class="tm">
+                        <div><img class ="logo" src="../img/logo/hw.png" alt="로고">
+                            <span id="HW">한화</span></div>
+                    </td>
+                    <td>64</td>
+                    <td>28</td>
+                    <td>36</td>
+                    <td>0</td>
+                    <td><strong>0.438</strong></td>
+                    <td>14.0</td>
+                    <td>2패</td>
+                    <td>0.322</td>
+                    <td>0.360</td>
+                    <td>4승-6패-0무</td>
+                </tr>
+                <tr>
+                    <th><strong>8</strong></th>
+                    <td class="tm">
+                        <div><img class ="logo" src="../img/logo/kt.png" alt="로고">
+                            <span id="KT">KT</span></div>
+                    </td>
+                    <td>66</td>
+                    <td>28</td>
+                    <td>38</td>
+                    <td>0</td>
+                    <td><strong>0.424</strong></td>
+                    <td>15.0</td>
+                    <td>3승</td>
+                    <td>0.341</td>
+                    <td>0.377</td>
+                    <td>5승-5패-0무</td>
+                </tr>
+                <tr>
+                    <th><strong>9</strong></th>
+                    <td class="tm">
+                        <div><img class ="logo" src="../img/logo/kia.png" alt="로고">
+                            <span id="KIA">KIA</span></div>
+                    </td>
+                    <td>65</td>
+                    <td>25</td>
+                    <td>39</td>
+                    <td>1</td>
+                    <td><strong>0.391</strong></td>
+                    <td>17.0</td>
+                    <td>3패</td>
+                    <td>0.338</td>
+                    <td>0.384</td>
+                    <td>3승-7패-0무</td>
+                </tr>
+                <tr>
+                    <th><strong>10</strong></th>
+                    <td class="tm">
+                        <div><img src="../img/logo/lt.png" class ="logo" alt="로고">
+                            <span id="LT">롯데</span></div>
+                    </td>
+                    <td>65</td>
+                    <td>23</td>
+                    <td>42</td>
+                    <td>0</td>
+                    <td><strong>0.354</strong></td>
+                    <td>19.5</td>
+                    <td>5패</td>
+                    <td>0.334</td>
+                    <td>0.365</td>
+                    <td>4승-6패-0무</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    <aside>
+        <div id="remote">
+            <p id="rightmove">팬 페이지</p>
+
+            <div id="remotebar">
+                <ul>
+                    <li> <a href="https://gall.dcinside.com/board/lists?id=skwyverns">SK</a> </li>
+                    <li> <a href="https://gall.dcinside.com/board/lists/?id=ncdinos&page=18">NC</a> </li>
+                    <li> <a href="https://gall.dcinside.com/board/lists?id=lgtwins_new">LG</a> </li>
+                    <li> <a href="https://gall.dcinside.com/board/lists/?id=ktwiz">KT</a> </li>
+                    <li> <a href="https://gall.dcinside.com/board/lists/?id=tigers_new">기아</a> </li>
+                    <li> <a href="https://gall.dcinside.com/board/lists?id=doosanbears_new1">두산</a> </li>
+                    <li> <a href="https://gall.dcinside.com/board/lists?id=sh">키움</a> </li>
+                    <li> <a href="https://gall.dcinside.com/board/lists/?id=giants_new2">롯데</a> </li>
+                    <li> <a href="https://gall.dcinside.com/board/lists/?id=hanwhaeagles_new">한화</a> </li>
+                    <li> <a href="https://gall.dcinside.com/board/lists?id=samsunglions_new">삼성</a> </li>
+                </ul>
+                </li>
+            </div>
+
+        </div>
+    </aside>
+    <footer>
+            <div>
+            
+                    <img id="ftlogo" src="../img/logo2.JPG" alt="kbo로고"> 
+                    <address>
+                            대전 광역시 유성구 궁동 451-10 TEL : 010-7352-9182
+                            <p>2019 WebProgramming Term Project</p>
+                        </address>
+                </div>
+    </footer>
+    <script src="../js.js"></script>
+</body>
+
+</html>

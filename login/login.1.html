@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>KBO</title>
+    <link type="text/css" rel="stylesheet" href="../maincss.css"/>
+    <link type="text/css" rel="stylesheet" href="../login/login1.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic:400,700,800&amp;subset=korean" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <a href="../mainpage/main.html"><img id = "kbologo" src="../img/logo.JPG" alt="kbo로고"></a> 
+        <div id="loginblock">
+            <a href="../login/login.html" class="logandreg">login</a>
+            <a href="../login/register.html" class="logandreg">  register</a>
+            <input id = "youtube" type="text" placeholder ="유튜브로 검색됩니다." onkeydown="Enter_Check()">
+        </div>
+    <ul id="menubar">
+            
+            <li><a href="../teamrecord/rank.html">팀순위</a></li>
+            <li> 팀정보 
+                <ul class="submenu">
+                        <li> <a href="../team/sk.html">SK</a> </li>
+                        <li> <a href="../team/nc.html">NC</a> </li>
+                        <li> <a href="../team/lg.html">LG</a> </li>
+                        <li> <a href="../team/kt.html">KT</a> </li>
+                        <li> <a href="../team/kia.html">기아</a> </li>
+                        <li> <a href="../team/doosan.html">두산</a> </li>
+                        <li> <a href="../team/kium.html">키움</a> </li>
+                        <li> <a href="../team/lotte.html">롯데</a> </li>
+                        <li> <a href="../team/hanwha.html">한화</a> </li>
+                        <li> <a href="../team/samsung.html">삼성</a> </li>
+                    </ul></li>
+            <li>선수 정보 
+                <ul class="submenu">
+                    <li><a href="../player/hitter.html">타자</a></li>
+                    <li><a href="../player/pitcher.html">투수</a></li>
+                </ul>
+            </li>
+            <li> 기타 정보
+                    <ul class="submenu">
+                        <li><a href="../etc/app.html">관련어플</a></li>
+                        <li><a href="../etc/fun.html">재미요소</a></li>
+                    </ul> 
+                 </li>
+            <li> <a href="../squad/squad.html">나의 스쿼드</a> </li>
+            
+        </ul>
+        <div id = "undernav"> </div>
+    </header>
+    <nav></nav>
+    <section>
+        <div id="logindiv">
+            <h1>Log-in</h1><br>
+            <form id="login">
+            <input type="text" name="user" placeholder="Username">
+            <input type="password" name="pass" placeholder="Password">
+            <input type="button" name="login" id="login" class="login" value="login">
+            </form>
+            <div class="login-help">
+                <a href="">Register</a>
+            </div>
+        </div>
+    </section>
+    <aside>
+            <div id ="remote">
+                    <p id="rightmove">팬 페이지</p>
+                    
+                    <div id="remotebar"> <ul >
+                            <li> <a href="https://gall.dcinside.com/board/lists?id=skwyverns">SK</a> </li>
+                            <li> <a href="https://gall.dcinside.com/board/lists/?id=ncdinos&page=18">NC</a> </li>
+                            <li> <a href="https://gall.dcinside.com/board/lists?id=lgtwins_new">LG</a> </li>
+                            <li> <a href="https://gall.dcinside.com/board/lists/?id=ktwiz">KT</a> </li>
+                            <li> <a href="https://gall.dcinside.com/board/lists/?id=tigers_new">기아</a> </li>
+                            <li> <a href="https://gall.dcinside.com/board/lists?id=doosanbears_new1">두산</a> </li>
+                            <li> <a href="https://gall.dcinside.com/board/lists?id=sh">키움</a> </li>
+                            <li> <a href="https://gall.dcinside.com/board/lists/?id=giants_new2">롯데</a> </li>
+                            <li> <a href="https://gall.dcinside.com/board/lists/?id=hanwhaeagles_new">한화</a> </li>
+                            <li> <a href="https://gall.dcinside.com/board/lists?id=samsunglions_new">삼성</a> </li>
+                        </ul></li></div>
+                   
+                    </div>
+    </aside>
+    <footer>
+            <div>
+            
+                    <img id="ftlogo" src="../img/logo2.JPG" alt="kbo로고"> 
+                    <address>
+                            대전 광역시 유성구 궁동 451-10 TEL : 010-7352-9182
+                            <p>2019 WebProgramming Term Project</p>
+                        </address>
+                </div>
+    </footer>
+    <script src="../js.js"></script>
+  
+</body>
+</html>

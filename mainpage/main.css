@@ -1,0 +1,37 @@
+#slideshow { /* 슬라이드 쇼를 할 전체적인 위치를 조정*/
+    margin-left: 10%;
+    position: relative;
+    width: 80%;
+    height: 50%;
+}
+
+#slideshow > div { /* position을 absolute로 두어서 자연스럽게 slide가 되게 함 */
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+  }
+.slides{ /* 각 slide의 사진의 크기에 대한 정의*/
+    width: 100%;
+    margin: 0px auto;
+    height: 100%;
+    box-shadow: 0px 0px 20px -5px rgba(0, 0, 0, 0.8);/* 그림자 효과*/
+}
+.Tagename{/* News 와 Video의 위치와 속성 정의 */
+    padding-top: 20px;
+    padding-left: 50px;
+    font-weight: bold;
+    font-size: 30px;
+    color: #369;
+    text-align: center;
+    margin-right: 8%;
+    
+}
+
+.yotubeframe{ /* Video 아래에 있는 영상들의 위치와 크기 정의*/
+    padding: 40px;
+    width: 40%;
+    height: 25%;
+}
+

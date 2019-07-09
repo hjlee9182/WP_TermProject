@@ -1,0 +1,134 @@
+body{
+    font-family: 'Nanum Gothic',sans-serif; /* 전체 font를 정한다.*/
+}
+header{
+    background-color: white;  /* 헤더의 크기와 색을 정하였다*/
+    height: 230px;
+}
+header, footer, nav, aside, section ,footer{/* 레이아웃을 나눈것을 눈으로 파악하려고 border를 그었다.*/
+    margin: 5px;
+    padding: 10px;
+   
+}
+footer {/* 레이아웃중 한개인 footer의 위치와 크기를 조정*/
+    height: 50px;
+    position: relatiev;
+    clear: both;
+}
+nav, section, aside {/* 가운데 위치한 nav와 section aside의 위치 조정*/
+    float: left;
+    height: 1200px;
+    
+}
+nav{/* nav의 width조정*/
+    width: 10%;
+}
+section{/* section의 width조정*/
+    width: 72%;
+}
+aside{/* aside 의 width조정*/
+    width: 10%;
+}
+#loginblock{/* Login, register가 포함된 div의 width와 위치 조정*/
+    text-align: right;
+    width: 100%;
+}
+.logandreg{  /*해당 block의 칼라와 패딩 조정*/
+   padding-right: 5px;
+   background-color: white;
+}
+a { /* 서브 메뉴에 대한 디자인*/
+    text-decoration:none;
+    color : #121212;
+    
+}
+#menubar{ /* 메뉴바의 위치 조정*/
+    float: right;
+}
+#menubar, .submenu{ /* 메뉴바와 그안의 서브메뉴의 위치 조정*/
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+#menubar > li{ /* 메뉴바의 각각 메뉴들에 대한 크기와 위치 조정*/
+    display : inline-block; width: 150px; padding: 5px 10px;
+    color: #121212; position: relative;
+    background: white; text-align: center; 
+  
+}
+#menubar > li > ul { /* 서브 메뉴는 처음에 보이지 않게 한다.*/
+    display: none; position: absolute;
+ 
+}
+ #menubar > li:hover >ul { /* 마우스를 위에 올리면 서브 메뉴가 나타나게 하였다.*/
+    
+     display: block;
+}
+.submenu > li {/* 해당 서브메뉴들의 크기와 위치를 조정하였습니다.*/
+    display: inline-block; width: 80px; padding: 5px 10px;
+    background: white; text-align: center;
+    border-bottom: #121212 solid 1px;
+    border-radius: 5px;
+}
+.submenu >li:hover {/* 서브 메뉴들 중에서도 마우스를 올리면 색이 바뀌게 하였습니다.*/
+    background: gray;
+    transform: perspective(150px) translateZ(60px);/* 올리면 커짐 */
+}
+#undernav{ /* 메뉴바만 두기 심심해보여서 아래에 디자인적인 요소로 막대를 하나 넣었습니다.*/
+    margin-top: 20px;
+    width: 900px;
+    height: 20px;
+    float: right;
+    background: navy;
+}
+#remote{/* 오른쪽에 위치한 바로가기 기능을 가진 리모컨에 대한 위치와 크기, 색 조정입니다.*/
+    text-align: center;
+    position: fixed;
+    width: 80px;
+    height: 450px;
+    border: 1px solid #444444;
+    border-collapse: collapse;
+    background: navy;
+    color: #fff;
+}
+#remotebar > ul{ /* 리모컨 내부의 정의입니다.*/
+    display : inline;
+    list-style-type: none;
+    padding-top: 10px;
+    
+}
+#remotebar>ul>li{ /* 리모컨 내부의 각 요소에 대해서 위치와 크기 조정 */
+    
+    margin-bottom: 12px;
+    width: 80px;
+}
+#remotebar >ul>li>a{ /* 리모컨 내부 각 요소의 글자색 정의*/
+    color: #fff;
+}
+#remotebar li:hover {
+    text-shadow: 0 1px rgba(0,0,0,0.3);
+    transform: perspective(150px) translateZ(60px);/* 올리면 커짐 */
+
+}
+#rightmove{ /* 리모컨 상단의 제목의 위치와 크기 배경색 정의*/
+   padding-top: 10px;
+    background: #121212;
+    height: 40px;
+    text-align: center;
+    margin-top: 0px;
+
+}
+#kbologo{ /* 로고의 위치*/
+    float: left;
+}
+#ftlogo{
+    height: 50px;
+    margin-left: 10%;
+    
+}
+address{
+    float: right;
+    font-size: 15px;
+    font-weight: bold;
+    margin-right: 60%;
+}

@@ -1,0 +1,30 @@
+td{
+    width: 33%;
+    color: black;
+    border-bottom: 3px solid rgba(21, 23, 143, 0.966);
+}
+#team{
+    margin-top: 10%;
+    width: 70%;
+    height: 30%;
+}
+table#team {
+    text-align: left;
+    border-radius: 10px;
+}
+#teamname{
+    font-weight: bold;
+}
+table#team tr th {
+    text-align: center;
+    width: 150px;
+    padding: 10px;
+    font-weight: bold;
+    border-bottom: 1px solid rgba(21, 23, 143, 0.966);
+    background: #f3f6f7;
+}
+table#team tr td {
+    width: 350px;
+    padding: 10px;
+    border-bottom: 1px bold rgba(21, 23, 143, 0.966);
+}

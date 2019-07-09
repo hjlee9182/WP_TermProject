@@ -1,0 +1,62 @@
+#field{ /* 야구장 필드 사진을 background로 하였고 사진 크기에 맞춰서 크기 조정을 하였다.*/
+    margin-left: 15%;
+    width: 70%;
+    height: auto;
+    border-collapse: collapse;
+    overflow: hidden;
+    background-image: url("../img/reference/field.JPG");
+    border: 1px solid #121212;
+}
+h1{
+    text-align: center;
+    font-size: 40px;
+}
+.position{ /* 각 포지션의 위치를 조정*/
+    width : 100px;
+    height: 130px;
+    
+}
+#field input{
+    width: 100px;
+}
+#rf_image{
+    float: right;
+    margin-right: 5%;
+}
+#cf_image{
+    margin-left: 45%;
+}
+#lf_image{
+    margin-left: 5%;
+    
+}
+#fb_image{
+    float: right;
+    margin-top: 5%;
+    margin-right: 15%;
+}
+#sb_image{
+    float: right;
+    margin-right: 5%;
+    
+}
+#ss_image{
+    float: right;
+    margin-right: 15%;
+}
+#tb_image{
+    margin-top: 5%;
+    margin-left: 10%;
+}
+#pitcher_image{
+    margin-left : 45%;
+   
+}
+#catcher_image{
+    margin-left: 45%;
+}
+.player{
+
+    width: 100px;
+    height: 130px;
+}

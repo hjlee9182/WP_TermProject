@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<!-- saved from url=(0033)http://localhost/hw2/todolist.php -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link type="text/css" rel="stylesheet" href="./Document_files/todolist.css">
+    <script src="./Document_files/jquery.min.js.다운로드"></script>
+    <link href="./Document_files/icon" rel="stylesheet">
+<style type="text/css">
+:root #content > #right > .dose > .dosesingle,
+:root #content > #center > .dose > .dosesingle,
+:root #header + #content > #left > #rlblock_left
+{ display: none !important; }</style></head>
+<body>
+  
+    <div id="addmodal" class="modal">
+    <!-- Modal content -->
+    <div class="modal-content">
+      
+      <form id="addform">
+            <div class="addbox"> 
+                    to do list: <select name="todo" id="todo">
+                      <option value="family">Family</option>
+                      <option value="school">School</option>
+                      <option value="travel">Travel</option>
+                      <option value="exercise">Exercise</option>
+                  </select><br></div>
+                   <div class="addbox">
+                      Memo : <input name="memo" id="modalinput" type="text"><br>
+                   </div>
+                   <div class="addbox">
+                    Start Date : <input name="sdate" type="date"><br>
+                   </div>
+                   <div class="addbox">
+                     
+                  Finish date : <input name="fdate" type="date"><br>
+                   </div> 
+                   <div class="addbox">
+                    <button id="submit">Submit</button>
+                    <button id="close">Close</button>
+                     </div>
+      </form>
+    </div>
+  </div>
+
+  <div id="searchmodal" class="modal" style="display: block;">
+        <!-- Modal content -->
+        <div class="modal-content">
+          
+         
+                <div class="addbox"> 
+                memo keyword : <input id="search_memo" type="text"><br>
+                </div>
+
+                       <div class="addbox">
+                        Start Date : <input id="search_sdate" name="sdate" type="date"><br>
+                       </div>
+                       <div class="addbox">
+                         
+                      Finish date : <input id="search_fdate" name="fdate" type="date"><br>
+                       </div> 
+                       <div class="addbox">
+                        Sort Standard : <select id="search_standard">
+                            <option value="Start date">Start date</option>
+                            <option value="finish date">finish date</option>
+                            <option value="memo">memo</option>
+                        </select>
+                             </div> 
+                       <div class="addbox">
+                           <input type="checkbox" value="Ascending" id="search_asc">Ascending
+                           <input type="checkbox" value="Descending " id="search_des">Descending
+                        <button id="searchsubmit" onclick="search()">Submit</button>
+                         </div>
+          
+        </div>
+      </div>
+    <div id="button">
+        <input type="button" value="Add" onclick="addbutton()">
+        <input type="button" value="Search" onclick="searchbutton()">
+    </div>
+    <div id="todolist">
+        <div id="school">
+            <div id="schooltitle">School</div>
+            <div class="todoinfo" ondrop="drop(event)" ondragover="allowDrop(event)">
+        <ul>
+        <li id="hw" draggable="true" ondragstart="drag(event)">hw(2019-06-04~2019-06-19
+)
+                 <i class="material-icons" onclick="xbutton()"></i> </li>            </ul>
+            </div>
+           
+        </div>
+        <div id="family">
+                <div id="familytitle">Family</div>
+                <div class="todoinfo" ondrop="drop(event)" ondragover="allowDrop(event)">
+                <ul>
+               <li id="daejeon" draggable="true" ondragstart="drag(event)"> daejeon(2019-06-01~2019-06-05
+)
+                 <i class="material-icons" onclick="xbutton()"></i></li>           </ul>
+                </div>
+               
+        </div>
+        <div id="exercise">
+                <div id="exercisetitle">Exercise</div>
+                <div class="todoinfo" ondrop="drop(event)" ondragover="allowDrop(event)">
+                <ul>
+
+                <li id="running" draggable="true" ondragstart="drag(event)">running(2019-05-29~2019-06-30
+)
+                 <i class="material-icons" onclick="xbutton()"></i> </li>                </ul>
+              </div>
+        </div>
+        <div id="travel">
+                <div id="traveltitle">Travel</div>
+                <div class="todoinfo" ondrop="drop(event)" ondragover="allowDrop(event)">
+              <ul>
+              <li id="ㅇㄹㅇㄹㅇ" draggable="true" ondragstart="drag(event)"> ㅇㄹㅇㄹㅇ(2019-06-03~2019-06-12
+)
+                 <i class="material-icons" onclick="xbutton()"></i> </li>
+              </ul>
+              </div>
+              </div>
+        
+    </div>
+    <div id="search">
+          <ul id="searchspace">
+
+          </ul>
+
+    </div>
+<script src="./Document_files/todolist.js.다운로드"></script>
+
+
+</body></html>

@@ -1,0 +1,40 @@
+#leftnav{
+    margin-left: 10%;
+   border-radius: 1em;
+   margin-top: 50%;
+    border: 1px solid #121212;
+    width: 80%;
+    height: 20%;
+    background: navy;
+    
+}
+section>p{
+    font-weight: bold;
+}
+section{
+    text-align: center;
+}
+section p{
+    font-size: 40px;
+}
+#leftnav >div> a{
+    color: #fff;
+}
+#leftnav div:hover{
+    transform: perspective(150px) translateZ(60px);/* 올리면 커짐 */
+}
+.navinfo{
+    margin-top: 40%;
+    text-align: center;
+    font-weight: bold;
+}
+
+#logodiv {
+    width: 100%;
+    height: 30%;
+    text-align: center;
+}
+#map {
+    height: 80%;
+  }
+

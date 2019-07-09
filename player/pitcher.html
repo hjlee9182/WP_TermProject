@@ -1,0 +1,773 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>투수 정보</title>
+    <link type="text/css" rel="stylesheet" href="../maincss.css" />
+    <link type="text/css" rel="stylesheet" href="../player/player.css" />
+
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic:400,700,800&amp;subset=korean" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <a href="../mainpage/main.html"><img id="kbologo" src="../img/logo.JPG" alt="kbo로고"></a>
+        <div id="loginblock">
+            <a href="../login/login.html" class="logandreg">login</a>
+            <a href="../login/register.html" class="logandreg"> register</a>
+            <input id="youtube" type="text" placeholder="유튜브로 검색됩니다." onkeydown="Enter_Check()">
+        </div>
+        <ul id="menubar">
+
+            <li><a href="../teamrecord/rank.html">팀순위</a></li>
+            <li> 팀정보
+                <ul class="submenu">
+                    <li> <a href="../team/sk.html">SK</a> </li>
+                    <li> <a href="../team/nc.html">NC</a> </li>
+                    <li> <a href="../team/lg.html">LG</a> </li>
+                    <li> <a href="../team/kt.html">KT</a> </li>
+                    <li> <a href="../team/kia.html">기아</a> </li>
+                    <li> <a href="../team/doosan.html">두산</a> </li>
+                    <li> <a href="../team/kium.html">키움</a> </li>
+                    <li> <a href="../team/lotte.html">롯데</a> </li>
+                    <li> <a href="../team/hanwha.html">한화</a> </li>
+                    <li> <a href="../team/samsung.html">삼성</a> </li>
+                </ul>
+            </li>
+            <li>선수 정보
+                <ul class="submenu">
+                    <li><a href="../player/hitter.html">타자</a></li>
+                    <li><a href="../player/pitcher.html">투수</a></li>
+                </ul>
+            </li>
+            <li> 기타 정보
+                <ul class="submenu">
+                    <li><a href="../etc/app.html">관련어플</a></li>
+                    <li><a href="../etc/fun.html">재미요소</a></li>
+                </ul>
+            </li>
+            <li> <a href="../squad/squad.html">나의 스쿼드</a> </li>
+
+        </ul>
+        <div id="undernav"> </div>
+    </header>
+    <nav>
+        <div id="leftnav">
+            <div class="navinfo">
+                <a href="../player/hitter.html"> 타자</a> <br>
+            </div>
+            <div class="navinfo">
+                <a href="../player/pitcher.html">투수</a>
+
+            </div>
+
+        </div>
+    </nav>
+    <section>
+        <table>
+            <caption>투수 순위</caption>
+            <thead>
+                <tr>
+                    <th>
+                        <div>
+
+                        </div>
+                    </th>
+                    <th>
+                        <div>
+                            <strong><span>이름</span></strong>
+                        </div>
+                    </th>
+
+                    <th>
+                        <div>
+
+                            <strong><span>평균
+                                    <br> 자책점</span></strong>
+
+                        </div>
+                    </th>
+
+                    <th>
+                        <div>
+
+                            <strong><span>경기</span></strong>
+
+                        </div>
+                    </th>
+
+                    <th>
+                        <div>
+                            <a>
+                                <strong><span>이닝</span></strong>
+
+                        </div>
+                    </th>
+
+                    <th>
+                        <div>
+                            <span>승</span></strong>
+
+                        </div>
+                    </th>
+
+                    <th>
+                        <div>
+                            <span>패</span></strong>
+
+                        </div>
+                    </th>
+
+                    <th>
+                        <div>
+
+                            <strong><span>세이브</span></strong>
+
+                        </div>
+                    </th>
+
+                    <th>
+                        <div>
+
+                            <strong><span>홀드</span></strong>
+
+                        </div>
+                    </th>
+
+                    <th>
+                        <div>
+                            <strong><span>삼진</span></strong>
+
+                        </div>
+                    </th>
+
+                    <th>
+                        <div>
+
+                            <strong><span>피안타</span></strong>
+
+                        </div>
+                    </th>
+
+                    <th>
+                        <div> <strong><span>피홈런</span></strong>
+
+                        </div>
+                    </th>
+
+                    <th>
+                        <div>
+                            <strpa>실점</span></strong>
+
+                        </div>
+                    </th>
+
+                    <th>
+                        <div>
+                            <strong><span>볼넷</span></strong>
+
+                        </div>
+                    </th>
+
+                    <th>
+                        <div>
+                            <strong><span>사구</span></strong>
+
+                        </div>
+                    </th>
+
+                    <th>
+                        <div>
+
+                            <strong><span>승률</span></strong>
+
+                        </div>
+                    </th>
+
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th>
+                        <strong>1</strong>
+                    </th>
+                    <td>
+                        <div>
+                            <img src="../img/logo/lg.png" alt="구단 로고"><br>
+                            <span>윌슨 <br><span>(LG)</span></span>
+                        </div>
+                    </td>
+                    <td>
+                        <strong>1.62</strong>
+
+                    </td>
+                    <td>
+                        <span>14</span>
+                    </td>
+                    <td>
+                        <span>94 2/3</span>
+                    </td>
+                    <td>
+                        <span>6</span>
+                    </td>
+                    <td>
+                        <span>4</span>
+                    </td>
+                    <td>
+                        <span>0</span>
+                    </td>
+                    <td>
+                        <span>0</span>
+                    </td>
+                    <td>
+                        <span>62</span>
+                    </td>
+                    <td>
+                        <span>78</span>
+                    </td>
+                    <td>
+                        <span>1</span>
+                    </td>
+                    <td>
+                        <span>27</span>
+                    </td>
+                    <td>
+                        <span>16</span>
+                    </td>
+                    <td>
+                        <span>5</span>
+                    </td>
+                    <td>
+                        <span>0.600</span>
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        <strong>2</strong>
+                    </th>
+                    <td>
+                        <div>
+                            <img src="../img/logo/sk.png" alt="구단 로고"><br>
+                            <span>산체스<br> <span>(SK)</span></span>
+                        </div>
+                    </td>
+                    <td>
+                        <strong>1.76</strong>
+
+                    </td>
+                    <td>
+                        <span>13</span>
+                    </td>
+                    <td>
+                        <span>81 2/3</span>
+                    </td>
+                    <td>
+                        <span>9</span>
+                    </td>
+                    <td>
+                        <span>2</span>
+                    </td>
+                    <td>
+                        <span>0</span>
+                    </td>
+                    <td>
+                        <span>0</span>
+                    </td>
+                    <td>
+                        <span>73</span>
+                    </td>
+                    <td>
+                        <span>67</span>
+                    </td>
+                    <td>
+                        <span>0</span>
+                    </td>
+                    <td>
+                        <span>19</span>
+                    </td>
+                    <td>
+                        <span>17</span>
+                    </td>
+                    <td>
+                        <span>1</span>
+                    </td>
+                    <td>
+                        <span>0.818</span>
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        <strong>3</strong>
+                    </th>
+                    <td>
+                        <div>
+                            <img src="../img/logo/nc.png" alt="구단 로고"><br>
+                            <span>루친스키<br><span>(NC)</span></span>
+                        </div>
+                    </td>
+                    <td>
+                        <strong>1.95</strong>
+
+                    </td>
+                    <td>
+                        <span>13</span>
+                    </td>
+                    <td>
+                        <span>83</span>
+                    </td>
+                    <td>
+                        <span>4</span>
+                    </td>
+                    <td>
+                        <span>3</span>
+                    </td>
+                    <td>
+                        <span>0</span>
+                    </td>
+                    <td>
+                        <span>0</span>
+                    </td>
+                    <td>
+                        <span>61</span>
+                    </td>
+                    <td>
+                        <span>60</span>
+                    </td>
+                    <td>
+                        <span>3</span>
+                    </td>
+                    <td>
+                        <span>23</span>
+                    </td>
+                    <td>
+                        <span>19</span>
+                    </td>
+                    <td>
+                        <span>5</span>
+                    </td>
+                    <td>
+                        <span>0.571</span>
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        <strong>4</strong>
+                    </th>
+                    <td>
+                        <div>
+                            <img src="../img/logo/lg.png" alt="구단 로고"><br>
+                            <span>켈리<br><span>(LG)</span></span>
+                        </div>
+                    </td>
+                    <td>
+                        <strong>2.14</strong>
+
+                    </td>
+                    <td>
+                        <span>14</span>
+                    </td>
+                    <td>
+                        <span>88 1/3</span>
+                    </td>
+                    <td>
+                        <span>6</span>
+                    </td>
+                    <td>
+                        <span>6</span>
+                    </td>
+                    <td>
+                        <span>0</span>
+                    </td>
+                    <td>
+                        <span>0</span>
+                    </td>
+                    <td>
+                        <span>71</span>
+                    </td>
+                    <td>
+                        <span>72</span>
+                    </td>
+                    <td>
+                        <span>4</span>
+                    </td>
+                    <td>
+                        <span>32</span>
+                    </td>
+                    <td>
+                        <span>21</span>
+                    </td>
+                    <td>
+                        <span>6</span>
+                    </td>
+                    <td>
+                        <span>0.500</span>
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        <strong>5</strong>
+                    </th>
+                    <td>
+                        <div>
+                            <img src="../img/logo/ds.png" alt="구단 로고"><br>
+                            <span>린드블럼<br> <span>(두산)</span></span>
+                        </div>
+                    </td>
+                    <td>
+                        <strong>2.15</strong>
+
+                    </td>
+                    <td>
+                        <span>14</span>
+                    </td>
+                    <td>
+                        <span>92</span>
+                    </td>
+                    <td>
+                        <span>9</span>
+                    </td>
+                    <td>
+                        <span>1</span>
+                    </td>
+                    <td>
+                        <span>0</span>
+                    </td>
+                    <td>
+                        <span>0</span>
+                    </td>
+                    <td>
+                        <span>84</span>
+                    </td>
+                    <td>
+                        <span>75</span>
+                    </td>
+                    <td>
+                        <span>6</span>
+                    </td>
+                    <td>
+                        <span>23</span>
+                    </td>
+                    <td>
+                        <span>15</span>
+                    </td>
+                    <td>
+                        <span>3</span>
+                    </td>
+                    <td>
+                        <span>0.900</span>
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        <strong>6</strong>
+                    </th>
+                    <td>
+                        <div>
+                            <img src="../img/logo/sk.png" alt="구단 로고"><br>
+                            <span>김광현<br><span>(SK)</span></span>
+                        </div>
+                    </td>
+                    <td>
+                        <strong>2.66</strong>
+
+                    </td>
+                    <td>
+                        <span>14</span>
+                    </td>
+                    <td>
+                        <span>84 2/3</span>
+                    </td>
+                    <td>
+                        <span>7</span>
+                    </td>
+                    <td>
+                        <span>1</span>
+                    </td>
+                    <td>
+                        <span>0</span>
+                    </td>
+                    <td>
+                        <span>0</span>
+                    </td>
+                    <td>
+                        <span>88</span>
+                    </td>
+                    <td>
+                        <span>88</span>
+                    </td>
+                    <td>
+                        <span>6</span>
+                    </td>
+                    <td>
+                        <span>27</span>
+                    </td>
+                    <td>
+                        <span>17</span>
+                    </td>
+                    <td>
+                        <span>1</span>
+                    </td>
+                    <td>
+                        <span>0.875</span>
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        <strong>7</strong>
+                    </th>
+                    <td>
+                        <div>
+                            <img src="../img/logo/ds.png" alt="구단 로고"><br>
+                            <span>유희관<br><span>(두산)</span></span>
+                        </div>
+                    </td>
+                    <td>
+                        <strong>2.77</strong>
+
+                    </td>
+                    <td>
+                        <span>13</span>
+                    </td>
+                    <td>
+                        <span>78</span>
+                    </td>
+                    <td>
+                        <span>3</span>
+                    </td>
+                    <td>
+                        <span>4</span>
+                    </td>
+                    <td>
+                        <span>0</span>
+                    </td>
+                    <td>
+                        <span>0</span>
+                    </td>
+                    <td>
+                        <span>34</span>
+                    </td>
+                    <td>
+                        <span>83</span>
+                    </td>
+                    <td>
+                        <span>2</span>
+                    </td>
+                    <td>
+                        <span>29</span>
+                    </td>
+                    <td>
+                        <span>17</span>
+                    </td>
+                    <td>
+                        <span>3</span>
+                    </td>
+                    <td>
+                        <span>0.429</span>
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        <strong>8</strong>
+                    </th>
+                    <td>
+                        <div>
+                            <img src="../img/logo/kt.png" alt="구단 로고"><br>
+                            <span>알칸타라<br><span>(KT)</span></span>
+                        </div>
+                    </td>
+                    <td>
+                        <strong>3.06</strong>
+
+                    </td>
+                    <td>
+                        <span>12</span>
+                    </td>
+                    <td>
+                        <span>85 1/3</span>
+                    </td>
+                    <td>
+                        <span>5</span>
+                    </td>
+                    <td>
+                        <span>5</span>
+                    </td>
+                    <td>
+                        <span>0</span>
+                    </td>
+                    <td>
+                        <span>0</span>
+                    </td>
+                    <td>
+                        <span>48</span>
+                    </td>
+                    <td>
+                        <span>87</span>
+                    </td>
+                    <td>
+                        <span>7</span>
+                    </td>
+                    <td>
+                        <span>30</span>
+                    </td>
+                    <td>
+                        <span>9</span>
+                    </td>
+                    <td>
+                        <span>4</span>
+                    </td>
+                    <td>
+                        <span>0.500</span>
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        <strong>9</strong>
+                    </th>
+                    <td>
+                        <div>
+                            <img src="../img/logo/sk.png" alt="구단 로고"><br>
+                            <span>박종훈<br><span>(SK)</span></span>
+                        </div>
+                    </td>
+                    <td>
+                        <strong>3.23</strong>
+
+                    </td>
+                    <td>
+                        <span>13</span>
+                    </td>
+                    <td>
+                        <span>69 2/3</span>
+                    </td>
+                    <td>
+                        <span>3</span>
+                    </td>
+                    <td>
+                        <span>3</span>
+                    </td>
+                    <td>
+                        <span>0</span>
+                    </td>
+                    <td>
+                        <span>0</span>
+                    </td>
+                    <td>
+                        <span>47</span>
+                    </td>
+                    <td>
+                        <span>77</span>
+                    </td>
+                    <td>
+                        <span>6</span>
+                    </td>
+                    <td>
+                        <span>28</span>
+                    </td>
+                    <td>
+                        <span>23</span>
+                    </td>
+                    <td>
+                        <span>5</span>
+                    </td>
+                    <td>
+                        <span>0.500</span>
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        <strong>10</strong>
+                    </th>
+                    <td>
+                        <div>
+                            <img src="../img/logo/hw.png" alt="구단 로고"><br>
+                            <span>채드벨 <br><span>(한화)</span></span>
+                        </div>
+                    </td>
+                    <td>
+                        <strong>3.38</strong>
+
+                    </td>
+                    <td>
+                        <span>14</span>
+                    </td>
+                    <td>
+                        <span>88</span>
+                    </td>
+                    <td>
+                        <span>5</span>
+                    </td>
+                    <td>
+                        <span>5</span>
+                    </td>
+                    <td>
+                        <span>0</span>
+                    </td>
+                    <td>
+                        <span>0</span>
+                    </td>
+                    <td>
+                        <span>62</span>
+                    </td>
+                    <td>
+                        <span>93</span>
+                    </td>
+                    <td>
+                        <span>6</span>
+                    </td>
+                    <td>
+                        <span>35</span>
+                    </td>
+                    <td>
+                        <span>34</span>
+                    </td>
+                    <td>
+                        <span>5</span>
+                    </td>
+                    <td>
+                        <span>0.500</span>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+    </section>
+    <aside>
+        <div id="remote">
+            <p id="rightmove">팬 페이지</p>
+
+            <div id="remotebar">
+                <ul>
+                    <li> <a href="https://gall.dcinside.com/board/lists?id=skwyverns">SK</a> </li>
+                    <li> <a href="https://gall.dcinside.com/board/lists/?id=ncdinos&page=18">NC</a> </li>
+                    <li> <a href="https://gall.dcinside.com/board/lists?id=lgtwins_new">LG</a> </li>
+                    <li> <a href="https://gall.dcinside.com/board/lists/?id=ktwiz">KT</a> </li>
+                    <li> <a href="https://gall.dcinside.com/board/lists/?id=tigers_new">기아</a> </li>
+                    <li> <a href="https://gall.dcinside.com/board/lists?id=doosanbears_new1">두산</a> </li>
+                    <li> <a href="https://gall.dcinside.com/board/lists?id=sh">키움</a> </li>
+                    <li> <a href="https://gall.dcinside.com/board/lists/?id=giants_new2">롯데</a> </li>
+                    <li> <a href="https://gall.dcinside.com/board/lists/?id=hanwhaeagles_new">한화</a> </li>
+                    <li> <a href="https://gall.dcinside.com/board/lists?id=samsunglions_new">삼성</a> </li>
+                </ul>
+                </li>
+            </div>
+
+        </div>
+    </aside>
+    <footer>
+        <div>
+
+            <img id="ftlogo" src="../img/logo2.JPG" alt="kbo로고">
+            <address>
+                대전 광역시 유성구 궁동 451-10 TEL : 010-7352-9182
+                <p>2019 WebProgramming Term Project</p>
+            </address>
+        </div>
+    </footer>
+    <script src="../js.js"></script>
+    <script src="../team/team.js"></script>
+</body>
+
+</html>

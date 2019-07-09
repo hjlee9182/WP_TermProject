@@ -1,0 +1,88 @@
+// Get the modal
+var addmodal = document.getElementById("addmodal");
+var searchmodal = document.getElementById("searchmodal");
+// When the user clicks on the button, open the modal 
+function addbutton() {
+  addmodal.style.display = "block";
+}
+
+function searchbutton(){
+
+  searchmodal.style.display = "block";
+}
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == addmodal) {
+    addmodal.style.display = "none";
+  }
+  if(event.target == searchmodal){
+
+    searchmodal.style.display = "none";
+  }
+}
+var close = document.getElementsByClassName["close"]
+
+$(document).ready(function(){
+  $("#submit").click(function(){
+      $.ajax({
+      url:'http://localhost/hw2/click.php',
+      type:'POST',
+      data:$('#addform').serialize(),
+      success:function(){
+        window.location.reload() ;
+      }
+      
+  });
+  });
+});
+
+function allowDrop(ev) {
+  ev.preventDefault();
+}
+
+function drag(ev) {
+  ev.dataTransfer.setData("text", ev.target.id);
+}
+
+
+function drop(ev) {
+  ev.preventDefault();
+  var dt = ev.dataTransfer.getData("text");
+  ev.target.appendChild(document.getElementById(dt));
+}
+function xbutton(){
+  alert("gd");
+}
+function search(){
+  var srchspace = document.getElementById("searchspace");
+  var memo = document.getElementById("search_memo").value;
+  var sdate = document.getElementById("search_sdate").value;
+  var fdate = document.getElementById("search_fdate").value;
+  var standard = document.getElementById("search_standard").value;
+  var asc = document.getElementById("search_asc").checked;
+  var des = document.getElementById("search_des").checked;
+  var arr= new Array();
+  $.ajax({
+    url:'http://localhost/hw2/getitem.php',
+    data:$('#addform').serialize(),
+    dataType:'json',
+    success:function(data){
+      if(memo !=null){
+        console.log("들어옴");
+        for(var i=0; i< data.length;i++){
+          var string_split = data[i].split('|');
+          if(string_split[0].indexOf(memo)){
+            console.log("ㅎㅇ");
+            arr.push(data[i]);
+          }
+        }
+      }
+      console.log(arr);
+      
+    }
+    
+});
+
+ 
+
+}

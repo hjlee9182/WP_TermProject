@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>KBO</title>
+    <link type="text/css" rel="stylesheet" href="../maincss.css"/>
+    <link type="text/css" rel="stylesheet" href="../login/login.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic:400,700,800&amp;subset=korean" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+</head>
+<body>
+    
+        <div id="registerform">
+            <h1>Register</h1><br>
+          <form id="register" onsubmit="return check()">
+            <input type="text" name="user" placeholder="Username">
+            <input type="password" name="password" id="rpwd" placeholder="Password">
+            <input type="password" name="pass" id="pwd" placeholder="Password Correct">
+            <button id="submit" >가입</button>
+          </form>
+          <div class="login-help">
+            <a href="../login/login.html">Login</a>
+        </div>
+        </div>
+    
+    <script src="../js.js"></script>
+    <script src="../login/person.js"></script>
+  
+</body>
+</html>

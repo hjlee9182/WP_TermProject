@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>KBO</title>
+    <link type="text/css" rel="stylesheet" href="../maincss.css"/>
+    <link type="text/css" rel="stylesheet" href="main.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic:400,700,800&amp;subset=korean" rel="stylesheet">
+</head>
+<body> 
+        <!-- 전체적으로 이런 디자인으로 모든 페이지가 구성될것이며-->
+        <!-- 각 메뉴마다 여기 레이아웃에서 추가적으로 더 구성될것이다.-->
+    <header> <!-- 상위 메뉴바 및 대표 로고가 있다.-->
+        <a href="../mainpage/main.html"><img id = "kbologo" src="../img/logo.JPG" alt="kbo로고"></a> 
+        <div id="loginblock"><!--로그인과 회원가입 버튼이 있으며 유튜브로 바로 검색한 input공간이 있다.-->
+            <a href="../login/login.html" class="logandreg">Login</a>
+            <a href="../login/register.html" class="logandreg">  Register</a>
+            <input id = "youtube" type="text" placeholder ="유튜브로 검색됩니다." onkeydown="Enter_Check()">
+        </div>
+    <ul id="menubar">
+            <!-- 각 메뉴가 있으며 해당 메뉴의 submenu또한 포함 되어있다.-->
+            <li><a href="../teamrecord/rank.html">팀순위</a></li>
+            <li> <a>팀정보</a>  
+                <ul class="submenu">
+                        <li> <a href="../team/sk.html">SK</a> </li>
+                        <li> <a href="../team/nc.html">NC</a> </li>
+                        <li> <a href="../team/lg.html">LG</a> </li>
+                        <li> <a href="../team/kt.html">KT</a> </li>
+                        <li> <a href="../team/kia.html">기아</a> </li>
+                        <li> <a href="../team/doosan.html">두산</a> </li>
+                        <li> <a href="../team/kium.html">키움</a> </li>
+                        <li> <a href="../team/lotte.html">롯데</a> </li>
+                        <li> <a href="../team/hanwha.html">한화</a> </li>
+                        <li> <a href="../team/samsung.html">삼성</a> </li>
+                    </ul></li>
+            <li> <a >선수 정보</a>  
+                <ul class="submenu">
+                    <li><a href="../player/hitter.html">타자</a></li>
+                    <li><a href="../player/pitcher.html">투수</a></li>
+                </ul>
+            </li>
+            <li> <a>기타 정보</a> 
+                    <ul class="submenu">
+                        <li><a href="../etc/app.html">관련어플</a></li>
+                        <li><a href="../etc/fun.html">재미요소</a></li>
+                    </ul> 
+                 </li>
+            <li> <a href="../squad/squad.html">나의 스쿼드</a> </li>
+            
+        </ul>
+ 
+        <div id = "undernav"> </div>
+    </header>
+           <!-- 왼쪽에 위치한 nav 레이아웃-->
+           <!-- 메인 화면에서는 따로 구성될것이 없으며, -->
+    <nav></nav>
+    <!-- 중앙에 위치한 레이아웃이다, 메인 메뉴에서는 슬라이드 이미지와 하이라이트 영상을 보여줄 것이다.(슬라이드 이미지를 선택시 해당 뉴스로 이동한다.)-->
+    <!-- 각 메뉴에서 중앙 레이아웃에는 팀 순위에서는 팀 순위 테이블을 보여줄것이며, 팀정보에서는 각 팀의 로고와 대표 선수를 보여줄것이며-->
+    <!-- 선수정보에서는 각 선수별로 기록들이 테이블에 기록될 것이며, 기타정보에서는 관련된 어플정보와 각 팀에서의 재미요소를 넣을 계획이다.-->
+    <!-- 나의 스쿼드에서는 선수의 이름을 입력하면 해당 선수의 이미지가 나타나게 하여서 자신만의 스쿼드를 만들수 있게 구현할것입니다. -->
+    <section>
+        <p class="Tagename">NEWS</p>
+        <div id="slideshow">
+            <div class = "slides"><a href="https://www.mk.co.kr/news/sports/view/2018/12/812320/" > <img  class="slides" src="../img/slideshow/report1.jpg" alt=""></a> </div> 
+            <div class = "slides"><a href="https://www.mk.co.kr/news/sports/view/2018/09/608189/" > <img  class="slides" src="../img/slideshow/report2.jpg" alt=""></a> </div> 
+            <div class = "slides"><a href="http://news.chosun.com/site/data/html_dir/2018/05/09/2018050900739.html" > <img  class="slides" src="../img/slideshow/report3.jpg" alt=""></a> </div> 
+        </div>
+       
+                <p class="Tagename" id="videos"> VIDEOS</p>
+                <iframe class="yotubeframe" src="https://www.youtube.com/embed/XP0iTlSjuWQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe class="yotubeframe" src="https://www.youtube.com/embed/d-pagM17vuI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        
+       
+       
+    </section>
+    <!-- 오른쪽에 각 구단의 팬페이지로 바로 이동할수있게 만들었다.-->
+    <aside>
+            <div id ="remote">
+                    <p id="rightmove">팬 페이지</p>
+                    
+                    <div id="remotebar"> <ul >
+                            <li> <a href="https://gall.dcinside.com/board/lists?id=skwyverns">SK</a> </li>
+                            <li> <a href="https://gall.dcinside.com/board/lists/?id=ncdinos&page=18">NC</a> </li>
+                            <li> <a href="https://gall.dcinside.com/board/lists?id=lgtwins_new">LG</a> </li>
+                            <li> <a href="https://gall.dcinside.com/board/lists/?id=ktwiz">KT</a> </li>
+                            <li> <a href="https://gall.dcinside.com/board/lists/?id=tigers_new">기아</a> </li>
+                            <li> <a href="https://gall.dcinside.com/board/lists?id=doosanbears_new1">두산</a> </li>
+                            <li> <a href="https://gall.dcinside.com/board/lists?id=sh">키움</a> </li>
+                            <li> <a href="https://gall.dcinside.com/board/lists/?id=giants_new2">롯데</a> </li>
+                            <li> <a href="https://gall.dcinside.com/board/lists/?id=hanwhaeagles_new">한화</a> </li>
+                            <li> <a href="https://gall.dcinside.com/board/lists?id=samsunglions_new">삼성</a> </li>
+                        </ul></li></div>
+                   
+                    </div>
+    </aside>
+    <!-- 맨 아래에 위치한 footer에 이 과제에 대한 간략한 정보를 넣었다.-->
+    <footer>
+        <div>
+            
+            <img id="ftlogo" src="../img/logo2.JPG" alt="kbo로고"> 
+            <address>
+                    대전 광역시 유성구 궁동 451-10 TEL : 010-7352-9182
+                    <p>2019 WebProgramming Term Project</p>
+                </address>
+        </div>
+       
+    </footer>
+    <script src="../js.js"></script>
+    <script src="main.js"></script>
+    
+</body>
+</html>
