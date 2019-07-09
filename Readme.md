@@ -13,7 +13,8 @@
 
 (2) 회원가입
 
-  ![그림입니다.  원본 그림의 이름: CLP00005bd00002.bmp  원본 그림의 크기: 가로 666pixel, 세로 515pixel](file:///C:\Users\lee\AppData\Local\Temp\Hnc\BinData\EMB000007d063ec.bmp)  
+![2](https://user-images.githubusercontent.com/46337218/60888707-6aaa9580-a292-11e9-8797-65a8cb516dad.PNG)
+
 
 ​     
 
@@ -22,12 +23,11 @@
  중복된 아이디가 있어도 가입이 안되게 하였습니다.(아래와 같은 alert가 뜨게 함)
 
 ​     
+![3](https://user-images.githubusercontent.com/46337218/60888729-74cc9400-a292-11e9-9645-01f8c8fcc9ac.PNG)
 
-  ![그림입니다.  원본 그림의 이름: CLP00005bd00003.bmp  원본 그림의 크기: 가로 680pixel, 세로 331pixel](file:///C:\Users\lee\AppData\Local\Temp\Hnc\BinData\EMB000007d063ed.bmp)    ![그림입니다.  원본 그림의 이름: CLP00005bd00004.bmp  원본 그림의 크기: 가로 635pixel, 세로 357pixel](file:///C:\Users\lee\AppData\Local\Temp\Hnc\BinData\EMB000007d063ee.bmp)  
 
 **(3)** **공통된 틀**
-
-  ![그림입니다.  원본 그림의 이름: CLP00005bd00006.bmp  원본 그림의 크기: 가로 1877pixel, 세로 200pixel](file:///C:\Users\lee\AppData\Local\Temp\Hnc\BinData\EMB000007d063ef.bmp)  
+![4](https://user-images.githubusercontent.com/46337218/60888788-857d0a00-a292-11e9-8c78-294cce5a284d.PNG)
 
 왼쪽 상단에는 KBO 마크가 있고 해당 이미지를 누르면 메인페이지로 이동하게 하였습니다.
 
@@ -37,7 +37,7 @@
 
 ​      ( 드롭아웃 예시)
 
-  ![그림입니다.  원본 그림의 이름: CLP00005bd00007.bmp  원본 그림의 크기: 가로 1038pixel, 세로 428pixel](file:///C:\Users\lee\AppData\Local\Temp\Hnc\BinData\EMB000007d063f0.bmp)  
+![5](https://user-images.githubusercontent.com/46337218/60888789-8615a080-a292-11e9-8776-11deb05bff30.PNG)
 
 ​     
 
@@ -47,7 +47,7 @@
 
 해당 메뉴에서 각 구단을 누르면 해당 구단의 팬페이지로 바로 이동하게 만들었습니다
 
-  ![그림입니다.  원본 그림의 이름: CLP00005bd0000a.bmp  원본 그림의 크기: 가로 613pixel, 세로 830pixel](file:///C:\Users\lee\AppData\Local\Temp\Hnc\BinData\EMB000007d063f1.bmp)  
+![6](https://user-images.githubusercontent.com/46337218/60888791-8615a080-a292-11e9-8629-cc46d78d72e6.PNG)
 
 이러한 페이지 틀을 기본으로 하여 중앙 레이아웃과 왼쪽 레이아웃의 내용이 바뀝니다.
 
@@ -55,9 +55,9 @@
 
 **(4)** **메인 페이지**
 
-  ![그림입니다.  원본 그림의 이름: CLP00005bd0000c.bmp  원본 그림의 크기: 가로 1170pixel, 세로 867pixel](file:///C:\Users\lee\AppData\Local\Temp\Hnc\BinData\EMB000007d063f2.bmp)  
+![7](https://user-images.githubusercontent.com/46337218/60888792-8615a080-a292-11e9-8fb7-3e34368feda3.PNG)
 
-  ![그림입니다.  원본 그림의 이름: CLP00005bd0000d.bmp  원본 그림의 크기: 가로 1234pixel, 세로 546pixel](file:///C:\Users\lee\AppData\Local\Temp\Hnc\BinData\EMB000007d063f3.bmp)  
+![8](https://user-images.githubusercontent.com/46337218/60888793-8615a080-a292-11e9-920e-8c1aca88f90a.PNG)
 
 ​     
 
@@ -74,8 +74,7 @@
 ​     
 
 ​     
-
-  ![그림입니다.  원본 그림의 이름: CLP00005bd0000f.bmp  원본 그림의 크기: 가로 1384pixel, 세로 660pixel](file:///C:\Users\lee\AppData\Local\Temp\Hnc\BinData\EMB000007d063f4.bmp)  
+![9](https://user-images.githubusercontent.com/46337218/60888794-86ae3700-a292-11e9-887a-b5c538c7874f.PNG)
 
 ​     
 
@@ -89,19 +88,18 @@
 
 각 행의 마우스를 올리면 반응하여서 그 행은 노란색의 색을 띄게 만들었습니다.
 
-  ![그림입니다.  원본 그림의 이름: CLP00005bd00016.bmp  원본 그림의 크기: 가로 1433pixel, 세로 440pixel](file:///C:\Users\lee\AppData\Local\Temp\Hnc\BinData\EMB000007d063f5.bmp)  
+![10](https://user-images.githubusercontent.com/46337218/60888795-86ae3700-a292-11e9-9ec8-31aa5b1a62e5.PNG)
 
 ​     
 
 (6) 각 팀 정보
 
-  ![그림입니다.  원본 그림의 이름: CLP00005bd00010.bmp  원본 그림의 크기: 가로 1254pixel, 세로 589pixel](file:///C:\Users\lee\AppData\Local\Temp\Hnc\BinData\EMB000007d063f6.bmp)  
+![11](https://user-images.githubusercontent.com/46337218/60888796-86ae3700-a292-11e9-9c0a-335e60b81eb0.PNG)
 
 왼쪽의 레이아웃에는 각 팀의 팀정보와 구장 위치로 이동할수있는 버튼을 만들었고
 
 중앙 상단에는 각 팀의 이름과 로고가 보이게 구현하였습니다.
-
-  ![그림입니다.  원본 그림의 이름: CLP00005bd00012.bmp  원본 그림의 크기: 가로 978pixel, 세로 726pixel](file:///C:\Users\lee\AppData\Local\Temp\Hnc\BinData\EMB000007d063f7.bmp)  
+![12](https://user-images.githubusercontent.com/46337218/60888798-86ae3700-a292-11e9-9a04-f5a430700217.PNG)
 
 ​     
 
@@ -115,7 +113,7 @@
 
 ​     
 
-  ![그림입니다.  원본 그림의 이름: CLP00005bd00014.bmp  원본 그림의 크기: 가로 1577pixel, 세로 745pixel](file:///C:\Users\lee\AppData\Local\Temp\Hnc\BinData\EMB000007d063f8.bmp)  
+![13](https://user-images.githubusercontent.com/46337218/60888885-ae9d9a80-a292-11e9-8b5e-d6deb3e46e3f.PNG)
 
 ​     
 
@@ -128,8 +126,7 @@
 
 
 ( 7) 선수 정보
-
-  ![그림입니다.  원본 그림의 이름: CLP00005bd00015.bmp  원본 그림의 크기: 가로 1535pixel, 세로 533pixel](file:///C:\Users\lee\AppData\Local\Temp\Hnc\BinData\EMB000007d063f9.bmp)  
+![14](https://user-images.githubusercontent.com/46337218/60888879-ae050400-a292-11e9-95a8-0767e4170ec7.PNG)
 
 ​     
 
@@ -146,14 +143,12 @@
 그리고 각 행에 마우스를 올리게 되면 노란색으로 하이라이트를 주게 하였습니다.
 
 ​     
-
-  ![그림입니다.  원본 그림의 이름: CLP00005bd00017.bmp  원본 그림의 크기: 가로 1363pixel, 세로 498pixel](file:///C:\Users\lee\AppData\Local\Temp\Hnc\BinData\EMB000007d063fa.bmp)  
+![15](https://user-images.githubusercontent.com/46337218/60888880-ae050400-a292-11e9-9a45-5c4cfc443717.PNG)
 
 ​     
 
 **(8)** **기타 정보**
-
-  ![그림입니다.  원본 그림의 이름: CLP00005bd00019.bmp  원본 그림의 크기: 가로 215pixel, 세로 175pixel](file:///C:\Users\lee\AppData\Local\Temp\Hnc\BinData\EMB000007d063fb.bmp)  
+![16](https://user-images.githubusercontent.com/46337218/60888881-ae050400-a292-11e9-881b-4850e01e975b.PNG)
 
 기타 정보에 마우스를 올리면 관련어플/재미요소 서브메뉴가 있습니다.
 
@@ -164,8 +159,7 @@ kbo와 관련된 어플리케이션에 대한 목록이 있습니다.
 대표 이미지를 왼쪽에 두고 오른쪽에 해당 어플리케이션의 대략적인 정보등을 담았습니다.
 
 그리고 각 어플리케이션의 구별을 두기 위해 위 아래 border에 색을 주었습니다.
-
-​     ![그림입니다.  원본 그림의 이름: CLP00005bd00018.bmp  원본 그림의 크기: 가로 1172pixel, 세로 892pixel](file:///C:\Users\lee\AppData\Local\Temp\Hnc\BinData\EMB000007d063fc.bmp)  
+![17](https://user-images.githubusercontent.com/46337218/60888882-ae9d9a80-a292-11e9-957f-a7458ca554c9.PNG)
 
 재미요소 메뉴에는 아래와 같은 정보를 넣었습니다.
 
@@ -173,13 +167,13 @@ kbo와 관련된 어플리케이션에 대한 목록이 있습니다.
 
 오른쪽에는 용어가 어떻게 나왔는지 언제 쓰이는지 등의 정보를 담고 있습니다.
 
-![그림입니다.  원본 그림의 이름: CLP00005bd0001b.bmp  원본 그림의 크기: 가로 1435pixel, 세로 837pixel](file:///C:\Users\lee\AppData\Local\Temp\Hnc\BinData\EMB000007d063fd.bmp)  
+![18](https://user-images.githubusercontent.com/46337218/60888883-ae9d9a80-a292-11e9-9453-e3210e9736f2.PNG)
 
 ​     
 
 **( 9 )** **나만의 스쿼드**
 
-  ![그림입니다.  원본 그림의 이름: CLP00005bd0001c.bmp  원본 그림의 크기: 가로 1224pixel, 세로 659pixel](file:///C:\Users\lee\AppData\Local\Temp\Hnc\BinData\EMB000007d063fe.bmp)  
+![19](https://user-images.githubusercontent.com/46337218/60888884-ae9d9a80-a292-11e9-9de2-0a1ac3995392.PNG)
 
  각 야구 포지션마다 입력할 수 있는 텍스트 공간이 있으며 거기에 선수의 이름을 입력하면
 
